@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Simple Payroll">
+    <meta name="description" content="">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Assignment-4.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.20.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Assignment 4">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-6755"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="Assignment-1.html" style="padding: 10px 20px;">Assignment 1</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="Assignment-2.html" style="padding: 10px 20px;">Assignment 2</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="Assignment-3.html" style="padding: 10px 20px;">Assignment 3</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="Assignment-4.html" style="padding: 10px 20px;">Assignment 4</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Assignment-1.html">Assignment 1</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Assignment-2.html">Assignment 2</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Assignment-3.html">Assignment 3</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Assignment-4.html">Assignment 4</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-05c3">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-custom-html u-custom-html-1">
+          <style> #emplist {
+          font-family: "Arial";
+          border-collapse: collapse;
+          width: 70%;
+        }
+        #emplist td, #emplist th {
+          border: 2px solid;
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+       
+        #emplist tr:nth-child(odd){background-color: rgb(255, 255, 255);}
+        #emplist tr:nth-child(even){background-color: #c7c7c7;}
+             
+        #emplist th {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          text-align: center;
+          background-color: rgb(255, 255, 255);
+          color:black;
+        } </style>
+          <script> //MAIN DISPLAY BELOW BEFORE ANOTHER SCRIPT </script>
+          <h1>Simple Payroll</h1> Employee's Name<input type="text" id="name">
+          <br>
+          <br> Days Worked <input type="text" id="worked">
+          <br>
+          <br> Daily Rate <input type="text" id="rate">
+          <br>
+          <br> Deduction Amount <input type="text" id="deduction">
+          <br>
+          <button onclick="computestuff()">Add to List</button>
+          <br>
+          <br>
+          <br> No. of Employee:<input type="number" id="emp" readonly=""> Delete Employee number: <input type="number" id="delitem">
+          <button onclick="deleteitem()">Delete</button>
+          <p id="emplist"></p>
+          <script> document.body.style.backgroundColor = "#F2F4F4";
+    //INTITI LIST    
+    function initlist(){
+        list=[];
+        document.getElementById("emp").value=list.length;
+        document.getElementById("emplist").innerHTML="";
+    }
+ 
+    //COMPUTE SOME STUFF AND DISPLAY
+    function computestuff(){
+         var employee = {
+            "gross": function gross(){
+                 return Math.round(this.worked*this.rate); 
+               },"net": function net(){
+                return Math.round(this.worked*this.rate-this.deduction); 
+                }
+        };
+        
+          employee.name=document.getElementById("name").value;
+          employee.worked=document.getElementById("worked").value;
+          employee.rate=document.getElementById("rate").value;
+          employee.deduction=document.getElementById("deduction").value;
+          
+          //ADD TO LIST
+          list.push(employee);
+         //EMPLOYEE LENGHT
+          document.getElementById("emp").value=list.length;
+          showlist();
+    }
+    //DELETE EMPLOYEES
+    function deleteitem(){
+        var todelete;
+        var itemno;
+        itemno=document.getElementById("delitem").value;
+        todelete=confirm("Are you sure you want to delete employee no. "+itemno+"?");
+        if (todelete) {
+            list.splice(itemno-1,1);
+            document.getElementById("emp").value=emplist.length;
+             showlist();   
+        }
+    }
+    // TEXT STYLES ON THE LIST OF EMPLOYEE & DISPLAY
+    function showlist(){
+        var i,l,totalamount,ln;
+        var theader,tbody,tfooter;
+        //LIST TEXT;
+        theader ="<thead>";
+        theader+="<tr>";
+        theader+='<th style="text-align:center" >No.</th>';
+        theader+='<th style="text-align:center" >Name</th>';
+        theader+="<th>Days Worked</th>";
+        theader+='<th style="text-align:center">Daily Rate</th>';
+        theader+="<th>Gross Pay</th>";
+        theader+="<th>Deduction Amount</th>";
+        theader+="<th>Net Pay</th>";
+        theader+="</tr>";
+        theader+="</thead>";
+     //TABLE BODY
+        l = list.length;
+        for (i=0,tbody='';i<l;i++){
+            ln=i+1;    
+            tbody += "<tr>"
+                +'<td style="text-align:center">'+ln+' </td>'
+                +'<td style="text-align:center">'+list[i].name+' </td>'
+                +'<td style="text-align:center">'+list[i].worked+'</td>'
+                +'<td style="text-align:center">'+list[i].rate+'</td>'
+                +'<td style="text-align:center">'+list[i].gross()+'</td>'    
+                +'<td style="text-align:center">'+list[i].deduction+'</td>'
+                +'<td style="text-align:center">'+list[i].net()+'</td>'
+                +"</tr>";
+        }
+        //TO DISPLAY ALL;
+        tfooter ="<tfoot>";
+        document.getElementById("emplist").innerHTML=
+        "<table>"+theader+tbody+tfooter+"</table";
+    } </script>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-53e3"><div class="u-clearfix u-sheet u-sheet-1"></div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  
+</body></html>
